@@ -36,8 +36,8 @@
 </head>
 <body>
     <div class="video-container">
-        <video id="video" autoplay playsinline>
-            <source src="namo-revuz.mp4" type="video/mp4">
+        <video id="video" autoplay muted playsinline>
+            <source src="your-video-file.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="fade" id="fade"></div>
@@ -55,8 +55,10 @@
             });
 
             video.addEventListener('ended', () => {
-                window.location.href = "https://search.google.com/local/writereview?placeid=ChIJW5jgfkv8YjkRehtUSCybAuY";
+                window.location.href = "https://myurl.in";
             });
+
+            video.play();
         });
     </script>
 </body>
